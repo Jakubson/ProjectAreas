@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+    <message msg="PLAYER_HAVE_NOT_PERMISSION" value="@cYou do not have not permission!" />
+    <message msg="HELP" value="@7Nothing..." />
+    <message msg="PLAYER_IS_ON_GAME" value="@cYou are in the game!" />
+    <message msg="GAME_ID_IS_NOT_DEFINDED" value="@cEnter arena id!" />
+    <message msg="GAME_ID_IS_NOT_INTEGER" value="@cArena id is must integer!" />
+    <message msg="GAME_IS_NOT_EXISTS" value="@cArena is not exists!" />
+    <message msg="TEAM_IS_NOT_DEFINDED" value="@cEnter team name!" /> 
+    <message msg="TEAM_IS_NOT_EXISTS" value="@cTeam is not exists!" />
+    <message msg="TEAM_IS_FULL" value="@cTeam is full!" />
+    <message msg="PLAYER_JOIN_TO_THE_GAME" value="@aYou joined to the game!" />
+    <message msg="PLAYER_LEAVE_THE_GAME" value="@aYou left the game!" />
+    <message msg="PLAYER_IS_NOT_ON_GAME" value="@cYou are not in the game!" />
+    <message msg="PLAYER_LEAVE_TO_THE_GAME" value="@aYou left the game!" />
+    <message msg="PLAYER_JOIN_TO_THE_TEAM" value="@7You joined to the @%TEAM_COLOR%@l%TEAM%@r @7team!" />
+    <message msg="STARTING" communication="SUBTITLE" value="@aArena starting.." />
+    <message msg="GAMING" communication="SUBTITLE" sound="WITHER_SHOOT" value="@aGO!" />
+    <message msg="ENDING" communication="SUBTITLE" value="@aArena ending.." />
+    <message msg="START_COUNTING" communication="ACTIONBAR" sound="CLICK" value="@3Arena start in @c@l%TIME%@r@3!" />
+    <message msg="GAME_COUNTING" communication="ACTIONBAR" value="@3Game end in @c@l%TIME%@r@3!" />
+    <message msg="END_COUNTING" communication="ACTIONBAR" value="@3Arena end in @c@l%TIME%@r@3!" />
+    <message msg="BUILD_DENY" value="@cBuild is disable on this map!" />
+</messages>
