@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<games>
+    <game id="1">
+        <lobby world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
+        <arenaplay id="1" />
+        <arenaplay id="2" />
+    </game>
+
+    <game id="2">
+        <lobby world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
+        <arenaplay id="3" />
+        <arenaplay id="1" />
+    </game>
+</games>
