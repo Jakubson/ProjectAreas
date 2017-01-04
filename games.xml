@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-games.xml -->
 <games>
     <game id="1">
         <lobby world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
