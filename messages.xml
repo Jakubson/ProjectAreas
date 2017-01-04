@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-messages.xml -->
 <messages>
     <message msg="PLAYER_HAVE_NOT_PERMISSION" value="@cYou do not have not permission!" />
     <message msg="HELP" value="@7Nothing..." />
