@@ -2,44 +2,74 @@
 <!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-arenas.xml -->
 <arenas>
     <arena id="1">
-        <info name="Map" author="5ea61e81-30c1-4c2e-84c8-776010fb95c0" version="1.0" />
-        <settings start="20" game="600" end="20" build="true" mode="TDM" score="2"/>
-
+        <info name="Map" author="Jakubson" version="1.0" />
+        <settings start="20" game="500" end="20" build="true" mode="TDM" damageYourself="true" winAfter="50" respawning="5" blackout="true" />
+        <points world="world" topX="0" topY="0" topZ="0" bottomX="0" bottomY="0" bottomZ="0" />
+        <menu title="@8@l»@r @8Select team!" name="@7Join @8@l»@r @%TEAM_COLOR%%TEAM_NAME% @8@l»@r @a%TEAM_PLAYERS%@7/@c%TEAM_MAX_PLAYERS%" />
+        
+        <disable>
+            <command name="gamemode" />
+            <command name="tp" />
+        </disable>
+        
         <scoreboard>
-            <title value="@6@lTDM @f%TIME%" />
+           <title value="@6@lTEAM DEATH MATCH" />
             <slot value="@f " /> <!-- empty slot 1 -->
-            <slot value="Kills: @a%KILLS%" />
-            <slot value="Deaths: @a%DEATHS%" />
+            <slot value="@7Time @8@l»@r @a%TIME%" />
             <slot value="@f  " /> <!-- empty slot 2 -->
-            <slot value="Your team: @%TEAM_COLOR%%TEAM%" />
-            <slot value="In your team: @a%TEAM_PLAYERS%/%TEAM_MAX_PLAYERS%" />
-            <slot value="In arena @a%PLAYERS%/%MAX_PLAYERS%" />
+            <slot value="@7Kills @8@l»@r @a%KILLS%" />
+            <slot value="@7Deaths @8@l»@r @a%DEATHS%" />
             <slot value="@f   " /> <!-- empty slot 3 -->
-            <slot value="Map name: @a%MAP_NAME%" />
-            <!-- max 16 slots -->
+            <slot value="@7Your team @8@l»@r @%TEAM_COLOR%%TEAM%" />
+            <slot value="@7In your team @8@l»@r @a%TEAM_PLAYERS%" />
+            <slot value="@f    " /> <!-- empty slot 4 -->
+            <slot value="@cRed @8@l»@r @a%TEAMS_SCORE%Red%" />
+            <slot value="@9Blue @8@l»@r @a%TEAMS_SCORE%Blue%" />
+            <slot value="@2Green @8@l»@r @a%TEAMS_SCORE%Green%" />
+            <slot value="@6Gold @8@l»@r @a%TEAMS_SCORE%Gold%" />
+            <slot value="@f     " /> <!-- empty slot 5 -->
+            <slot value=" @8@l»@r @6www.spigotmc.org @8@l«" />
+            <!-- to 16 slots -->
         </scoreboard>
 
         <teams>
             <team name="Spectator" color="b" min="-1" max="-1" spectator="true" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
-            <team name="Red" color="c" min="2" max="10" particle="REDSTONE" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
-            <team name="Blue" color="9" min="2" max="10" particle="DROPLET" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
-            <team name="Green" color="a" min="2" max="10" particle="SLIME" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
+            <team name="Red" color="c" min="2" max="10" particle="FLAME" size="0.4" protection="8" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
+            <team name="Blue" color="9" min="2" max="10" particle="FLAME" size="0.4" protection="8" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
+            <team name="Green" color="a" min="2" max="10" particle="FLAME" size="0.4" protection="8" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
         </teams>
-
+        
         <inventory>
-            <item slot="0" item="IRON_SWORD" amount="1" data="0" name="@aSword" lore="@7Description of sword." enchant="DAMAGE_ALL" level="1" />
-            <item slot="1" item="IRON_PICKAXE" amount="1" data="0" name="@aPickaxe" lore="@7Description of pickaxe" />
-            <item slot="2" item="BOW" amount="1" data="0" name="@aBow" lore="@7Description of bow." enchant="ARROW_DAMAGE" level="2" />
-            <item slot="3" item="COOKED_BEEF" amount="32" data="0" name="@aBeef" lore="@7Description of beef." />
-            <item slot="4" item="GOLDEN_APPLE" amount="2" data="0" name="@6Apple" lore="@7Description of applee." />
-            <item slot="5" item="COBBLESTONE" amount="64" data="0" name="@aCobblestone" lore="@7Description of cobblestone." />
-            <item slot="6" item="COBBLESTONE" amount="64" data="0" name="@aCobblestone" lore="@7Description of cobblestone." />
-            <item slot="29" item="ARROW" amount="64" data="0" name="@aArrow" lore="@7Description of arrow." />
-            <item slot="20" item="ARROW" amount="64" data="0" name="@aArrow" lore="@7Description of arrow." />
-            <item slot="100" item="LEATHER_BOOTS" amount="1" data="0" name="@aBoots" lore="@7Description of boots." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
-            <item slot="101" item="LEATHER_LEGGINGS" amount="1" data="0" name="@aLeggings" lore="@7Description of leggings." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
-            <item slot="102" item="IRON_CHESTPLATE" amount="1" data="0" name="@aChestplate" lore="@7Description of chestplate." />
-            <item slot="103" item="LEATHER_HELMET" amount="1" data="0" name="@aHelmet" lore="@7Description of helmet." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
+            <spectator>
+                <item slot="0" item="NETHER_STAR" amount="1" data="0" name="@aTeam select" />
+                <item slot="1" item="COMPASS" amount="1" data="0" name="@aTeleport" />
+            </spectator>
+            
+            <player>
+                <item slot="0" item="IRON_SWORD" amount="1" data="0" name="@aSword" lore="@7Description of sword." enchant="DAMAGE_ALL" level="1" />
+                <item slot="1" item="IRON_PICKAXE" amount="1" data="0" name="@aPickaxe" lore="@7Description of pickaxe" />
+                <item slot="2" item="BOW" amount="1" data="0" name="@aBow" lore="@7Description of bow." enchant="ARROW_DAMAGE" level="2" />
+                <item slot="3" item="COOKED_BEEF" amount="32" data="0" name="@aBeef" lore="@7Description of beef." />
+                <item slot="4" item="GOLDEN_APPLE" amount="2" data="0" name="@6Apple" lore="@7Description of applee." />
+                <item slot="5" item="COBBLESTONE" amount="64" data="0" />
+                <item slot="6" item="COBBLESTONE" amount="64" data="0" />
+                <item slot="29" item="ARROW" amount="64" data="0" />
+                <item slot="20" item="ARROW" amount="64" data="0" />
+                <item slot="100" item="LEATHER_BOOTS" amount="1" data="0" name="@aBoots" lore="@7Description of boots." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
+                <item slot="101" item="LEATHER_LEGGINGS" amount="1" data="0" name="@aLeggings" lore="@7Description of leggings." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
+                <item slot="102" item="IRON_CHESTPLATE" amount="1" data="0" name="@aChestplate" lore="@7Description of chestplate." />
+                <item slot="103" item="LEATHER_HELMET" amount="1" data="0" name="@aHelmet" lore="@7Description of helmet." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
+            </player>
         </inventory>
+        
+        <monuments>
+            <monument team="Red" give="3" particle="ENCHANTMENT_TABLE" size="1.2" world="world" x="0" y="0" z="0" />
+            <monument team="Blue" give="3" particle="ENCHANTMENT_TABLE" size="1.2" world="world" x="0" y="0" z="0" />
+        </monuments>
+        
+        <flags>
+            <flag team="Red" give="1" particle="ENCHANTMENT_TABLE" size="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
+            <flag team="Blue" give="1" particle="ENCHANTMENT_TABLE" size="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
+        </flags>
     </arena>
 </arenas>
