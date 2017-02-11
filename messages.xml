@@ -1,25 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-messages.xml -->
 <messages>
-    <message msg="PLAYER_HAVE_NOT_PERMISSION" value="@cYou do not have not permission!" />
-    <message msg="HELP" value="@7Nothing..." />
-    <message msg="PLAYER_IS_ON_GAME" value="@cYou are in the game!" />
-    <message msg="GAME_ID_IS_NOT_DEFINDED" value="@cEnter arena id!" />
-    <message msg="GAME_ID_IS_NOT_INTEGER" value="@cArena id is must integer!" />
-    <message msg="GAME_IS_NOT_EXISTS" value="@cArena is not exists!" />
-    <message msg="TEAM_IS_NOT_DEFINDED" value="@cEnter team name!" /> 
-    <message msg="TEAM_IS_NOT_EXISTS" value="@cTeam is not exists!" />
-    <message msg="TEAM_IS_FULL" value="@cTeam is full!" />
-    <message msg="PLAYER_JOIN_TO_THE_GAME" value="@aYou joined to the game!" />
-    <message msg="PLAYER_LEAVE_THE_GAME" value="@aYou left the game!" />
-    <message msg="PLAYER_IS_NOT_ON_GAME" value="@cYou are not in the game!" />
-    <message msg="PLAYER_LEAVE_TO_THE_GAME" value="@aYou left the game!" />
-    <message msg="PLAYER_JOIN_TO_THE_TEAM" value="@7You joined to the @%TEAM_COLOR%@l%TEAM%@r @7team!" />
-    <message msg="STARTING" communication="SUBTITLE" value="@aArena starting.." />
-    <message msg="GAMING" communication="SUBTITLE" sound="WITHER_SHOOT" value="@aGO!" />
-    <message msg="ENDING" communication="SUBTITLE" value="@aArena ending.." />
-    <message msg="START_COUNTING" communication="ACTIONBAR" sound="CLICK" value="@3Arena start in @c@l%TIME%@r@3!" />
-    <message msg="GAME_COUNTING" communication="ACTIONBAR" value="@3Game end in @c@l%TIME%@r@3!" />
-    <message msg="END_COUNTING" communication="ACTIONBAR" value="@3Arena end in @c@l%TIME%@r@3!" />
-    <message msg="BUILD_DENY" value="@cBuild is disable on this map!" />
+    <message msg="HELP" value="@7Welcome in Project Areas help center!//@8@l»@r @a/areas join [arena id] @8@l»@r @7join to the arena//@8@l»@r @a/areas leave @8@l»@r @7leave the arena//@8@l»@r @a/areas team [team name] @8@l»@r @7join to the team//@8@l»@r @a/areas status [arena id] [status game] @8@l»@r @7change status game//  @8Status: WAIT, START, GAME, END//@8@l»@r @a/areas nextarena [game id] @8@l»@r @7start next arena//@8@l»@r @a/areas reload @8@l»@r @7reload the plugin" />
+    
+    <message msg="PLAYER_HAVE_NOT_PERMISSION" sound="ITEM_BREAK" value=" @c@l⚠@r @7You do not have not permission!" />
+    <message msg="PLAYER_IS_ON_GAME" sound="ITEM_BREAK" value=" @c@l⚠@r @7You are in the game!" />
+    <message msg="PLAYER_JOIN_TO_THE_GAME" sound="CLICK" value=" @a@l»@r @7You joined to the game! @8(@a%PLAYERS%@7/@c%MAX_PLAYERS%@8)" />
+    <message msg="PLAYER_LEAVE_THE_GAME" sound="CLICK" value=" @a@l»@r @7You left the game!" />
+    <message msg="PLAYER_IS_NOT_ON_GAME" sound="ITEM_BREAK" value=" @c@l⚠@r @7You are not in the game!" />
+    <message msg="PLAYER_JOIN_TO_THE_TEAM" sound="CLICK" value=" @a@l»@r @7You joined to the @%TEAM_COLOR%@l%TEAM_NAME%@r @7team! @8(@a%TEAM_PLAYERS%@7/@c%TEAM_MAX_PLAYERS%@8)" />
+    
+    <message msg="GAME_ID_IS_NOT_DEFINDED" sound="ITEM_BREAK" value=" @c@l⚠@r @7Enter game id!" />
+    <message msg="GAME_ID_IS_NOT_INTEGER" sound="ITEM_BREAK" value=" @c@l⚠@r @7Game id is must integer!" />
+    <message msg="GAME_IS_NOT_EXISTS" sound="ITEM_BREAK" value=" @c@l⚠@r @7Game is not exists!" />
+    <message msg="GAME_STATUS_IS_NOT_DEFINED" sound="ITEM_BREAK" value=" @c@l⚠@r @7Enter game status!" />
+    <message msg="GAME_STAUTS_IS_NOT_OBJECT" sound="ITEM_BREAK" value=" @c@l⚠@r @7Game status is not validate!" />
+    
+    <message msg="ARENA_ID_IS_NOT_DEFINDED" sound="ITEM_BREAK" value=" @c@l⚠@r @7Enter arena id!" />
+    <message msg="ARENA_ID_IS_NOT_INTEGER" sound="ITEM_BREAK" value=" @c@l⚠@r @7Arena id is must integer!" />
+    <message msg="ARENA_IS_NOT_EXISTS" sound="ITEM_BREAK" value=" @c@l⚠@r @7Arena is not exists!" />
+    
+    <message msg="TEAM_IS_NOT_DEFINDED" sound="ITEM_BREAK" value=" @c@l⚠@r @7Enter team name!" /> 
+    <message msg="TEAM_IS_NOT_EXISTS" sound="ITEM_BREAK" value=" @c@l⚠@r @7Team is not exists!" />
+    <message msg="TEAM_IS_FULL" sound="ITEM_BREAK" value=" @c@l⚠@r @7Team is full!" />
+    
+    <message msg="MONUMENT_DESTROY" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20"  sound="ANVIL_BREAK" value="@2@l»@r @7You destory monument! @2@l«" />
+    <message msg="MONUMENT_DESTROY_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="GHAST_SCREAM" value="@c@l⚠@r @c@lYOUR MONUMENT IS DESTROYING! @c@l⚠" />
+    <message msg="MONUMENT_DESTROY_YOURSELF" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="GHAST_SCREAM" value=" @c@l⚠@r @c@lYOU CAN'T DESTROY YOUR MONUMENT! @c@l⚠" />
+    
+    <message msg="FLAG_STOLEN" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="LEVEL_UP" value="@2@l»@r @7You stolen the flag! @2@l«" />
+    <message msg="FLAG_CAPTURE" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="LEVEL_UP" value="@2@l»@r @7You capture the flag! @2@l«" />
+    <message msg="FLAG_DROP" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20"  sound="ITEM_BREAK" value="@c@l⚠@r @c@lYOU DROP THE FLAG! @c@l⚠" />
+    <message msg="FLAG_CAPTURING" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="ITEM_BREAK" value=" @c@l⚠@r @c@lTHIS FLAG IS CAPTURING! @c@l⚠" />
+    <message msg="FLAG_STOLEN_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="GHAST_SCREAM" value="@c@l⚠@r @c@lYOUR FLAG IS STOLEN! @c@l⚠" />
+    <message msg="FLAG_CAPTURE_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="GHAST_SCREAM" value="@c@l⚠@r @c@lYOUR FLAG IS CAPTURE @c@l⚠" />
+    <message msg="FLAG_RECOVERED_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" value="@2@l»@r @7Your flag is recovered! @2@l«" />
+    <message msg="FLAG_STOLEN_YOURSELF" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="GHAST_SCREAM" value=" @c@l⚠@r @c@lYOU CAN'T STOLEN YOUR FLAG! @c@l⚠" />
+    
+    <message msg="STARTING" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" value="@2@l»@r @7Arena starting... @2@l«" />
+    <message msg="GAMING" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="WITHER_SHOOT" value="@2@l»@r @7GO! @2@l«" />
+    <message msg="ENDING" communication="SUBTITLE" fadeIn="30" stay="100" fadeOut="30" sound="ENDERDRAGON_DEATH" value="@2@l»@r @7Team @%TEAM_WIN_COLOR%@l%TEAM_WIN_NAME%@r @7won the game! @2@l«" />
+    
+    <message msg="START_COUNTING" communication="ACTIONBAR" sound="CLICK" value="@7Start @8@l»@r @a%TIME%" />
+    <message msg="GAME_COUNTING" communication="ACTIONBAR" value="@7End @8@l»@r @a%TIME%" />
+    <message msg="END_COUNTING" communication="ACTIONBAR" sound="CLICK" value="@7Next map @8@l»@r @7%NEXT_MAP_NAME% @8@l»@r @a%TIME%" />
+    
+    <message msg="DEATH_PLAYER_VICTIM" value=" @a@l»@r @7You been kiled by @a%ATTACKER_NAME% @8(@a%ATTACKER_HEALTH% @c❤@8) @7using @a%ATTACKER_TOOL%@7!" />
+    <message msg="DEATH_PLAYER_ATTACKER" value=" @a@l»@r @7You killed @a%VICTIM_NAME%@7!" />
+    <message msg="DEATH_OTHER" value=" @a@l»@r @7You died!" />
+    
+    <message msg="CHAT_TEAM" value="@%TEAM_COLOR%%PLAYER_NAME% @8@l»@r @7%MESSAGE%" />
+    <message msg="CHAT_GLOBAL" value="@%TEAM_COLOR%Global @8@l»@r @%TEAM_COLOR%%PLAYER_NAME% @8@l»@r @7%MESSAGE%" />
+    
+    <message msg="BUILD_DENY" sound="ITEM_BREAK" value=" @c@l⚠@r @7You can not build here!" />
+    <message msg="EXECUTED" value=" @a@l»@r @7Executed!" />
+    <message msg="RESPAWNING" communication="SUBTITLE" stay="30" value="@6@l✖@r @7You will respawn in @a@l%RESPAWN_TIME%@r@7! @6@l✖" />
+    <message msg="COMMAND_DISABLE" sound="ITEM_BREAK" value=" @c@l⚠@r @7This command is disable!" />
 </messages>
