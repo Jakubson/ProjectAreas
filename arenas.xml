@@ -65,8 +65,8 @@
         </inventory>
         
         <monuments>
-            <monument team="Red" give="3" particle="ENCHANTMENT_TABLE" size="1.2" world="world" x="0" y="0" z="0" />
-            <monument team="Blue" give="3" particle="ENCHANTMENT_TABLE" size="1.2" world="world" x="0" y="0" z="0" />
+            <monument team="Red" give="3" particle="ENCHANTMENT_TABLE" size="1.2" protection="5" world="world" x="0" y="0" z="0" />
+            <monument team="Blue" give="3" particle="ENCHANTMENT_TABLE" size="1.2" protection="5" world="world" x="0" y="0" z="0" />
         </monuments>
         
         <flags>
