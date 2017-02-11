@@ -42,8 +42,9 @@
         
         <inventory>
             <spectator>
-                <item slot="0" item="NETHER_STAR" amount="1" data="0" name="@aTeam select" />
-                <item slot="1" item="COMPASS" amount="1" data="0" name="@aTeleport" />
+                <item slot="0" item="NETHER_STAR" amount="1" data="0" command="/projectareas team" name="@8@l»@r @aTeam select" />
+                <item slot="1" item="COMPASS" amount="1" data="0" name="@8@l»@r @aTeleport" />
+                <item slot="8" item="BED" amount="1" data="0" command="/projectareas leave" name="@8@l»@r @cLeave" />
             </spectator>
             
             <player>
