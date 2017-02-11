@@ -5,6 +5,7 @@
         <info name="Map" author="Jakubson" version="1.0" />
         <settings start="20" game="500" end="20" build="true" mode="TDM" damageYourself="true" winAfter="50" respawning="5" blackout="true" />
         <points world="world" topX="0" topY="0" topZ="0" bottomX="0" bottomY="0" bottomZ="0" />
+        <prize normal="givemoney %WIN_PLAYER% 30" vip="givemoney %WIN_PLAYER% 60" mvp="givemoney %WIN_PLAYER% 120" /> <!-- VIP: projectareas.prize.vip MVP: projectareas.prize.mvp -->
         <menu title="@8@l»@r @8Select team!" name="@7Join @8@l»@r @%TEAM_COLOR%%TEAM_NAME% @8@l»@r @a%TEAM_PLAYERS%@7/@c%TEAM_MAX_PLAYERS%" />
         
         <disable>
@@ -17,10 +18,10 @@
             <slot value="@f " /> <!-- empty slot 1 -->
             <slot value="@7Time @8@l»@r @a%TIME%" />
             <slot value="@f  " /> <!-- empty slot 2 -->
-            <slot value="@7Kills @8@l»@r @a%KILLS%" />
-            <slot value="@7Deaths @8@l»@r @a%DEATHS%" />
+            <slot value="@7Kills @8@l»@r @a%PLAYER_KILLS%" />
+            <slot value="@7Deaths @8@l»@r @a%PLAYER_DEATHS%" />
             <slot value="@f   " /> <!-- empty slot 3 -->
-            <slot value="@7Your team @8@l»@r @%TEAM_COLOR%%TEAM%" />
+            <slot value="@7Your team @8@l»@r @%TEAM_COLOR%%TEAM_NAME%" />
             <slot value="@7In your team @8@l»@r @a%TEAM_PLAYERS%" />
             <slot value="@f    " /> <!-- empty slot 4 -->
             <slot value="@cRed @8@l»@r @a%TEAMS_SCORE%Red%" />
