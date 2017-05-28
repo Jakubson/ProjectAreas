@@ -3,7 +3,7 @@
 <arenas>
     <arena id="1">
         <info name="Map" author="Jakubson" version="1.0" />
-        <settings start="20" game="500" end="20" build="true" mode="TDM" damageYourself="true" winAfter="50" respawning="5" blackout="true" />
+        <settings start="20" game="500" end="20" build="true" mode="TDM" damageYourself="true" clearDrop="false" winAfter="50" respawning="5" blackout="true" />
         <points world="world" topX="0" topY="0" topZ="0" bottomX="0" bottomY="0" bottomZ="0" />
         <prize normal="givemoney %WIN_PLAYER% 30" vip="givemoney %WIN_PLAYER% 60" mvp="givemoney %WIN_PLAYER% 120" /> <!-- VIP: projectareas.prize.vip MVP: projectareas.prize.mvp -->
         <menu title="@8@l»@r @8Select team!" name="@7Join @8@l»@r @%TEAM_COLOR%%TEAM_NAME% @8@l»@r @a%TEAM_PLAYERS%@7/@c%TEAM_MAX_PLAYERS%" />
@@ -13,16 +13,22 @@
             <command name="tp" />
         </disable>
         
+        <events>
+            <event event="KILL" command="give %PLAYER_NAME% golden_apple 1" />
+            <event event="FLAG_STOLEN" command="effect %PLAYER_NAME% speed 5 2" />
+            <event event="FLAG_CAPTURE" command="effect %PLAYER_NAME% regeneration 5 4" />
+        </events>
+        
         <scoreboard>
-           <title value="@6@lTEAM DEATH MATCH" />
+            <title value="@6@lTEAM DEATH MATCH" />
             <slot value="@f " /> <!-- empty slot 1 -->
             <slot value="@7Time @8@l»@r @a%TIME%" />
             <slot value="@f  " /> <!-- empty slot 2 -->
             <slot value="@7Kills @8@l»@r @a%PLAYER_KILLS%" />
             <slot value="@7Deaths @8@l»@r @a%PLAYER_DEATHS%" />
             <slot value="@f   " /> <!-- empty slot 3 -->
-            <slot value="@7Your team @8@l»@r @%TEAM_COLOR%%TEAM_NAME%" />
-            <slot value="@7In your team @8@l»@r @a%TEAM_PLAYERS%" />
+            <slot value="@7Your team @8@l»@r @%PLAYER_TEAM_COLOR%%PLAYER_TEAM_NAME%" />
+            <slot value="@7In your team @8@l»@r @a%PLAYER_TEAM_PLAYERS%" />
             <slot value="@f    " /> <!-- empty slot 4 -->
             <slot value="@cRed @8@l»@r @a%TEAMS_SCORE%Red%" />
             <slot value="@9Blue @8@l»@r @a%TEAMS_SCORE%Blue%" />
@@ -34,7 +40,7 @@
         </scoreboard>
 
         <teams>
-            <team name="Spectator" color="b" min="-1" max="-1" spectator="true" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
+            <team name="Spectator" color="b" min="0" max="0" spectator="true" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
             <team name="Red" color="c" min="2" max="10" particle="FLAME" size="0.4" protection="8" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
             <team name="Blue" color="9" min="2" max="10" particle="FLAME" size="0.4" protection="8" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
             <team name="Green" color="a" min="2" max="10" particle="FLAME" size="0.4" protection="8" world="world" x="0" y="0" z="0" yaw="0" pitch="0" />
@@ -70,8 +76,8 @@
         </monuments>
         
         <flags>
-            <flag team="Red" give="1" particle="ENCHANTMENT_TABLE" size="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
-            <flag team="Blue" give="1" particle="ENCHANTMENT_TABLE" size="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
+            <flag team="Red" give="1" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
+            <flag team="Blue" give="1" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
         </flags>
     </arena>
 </arenas>
