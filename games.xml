@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-games.xml -->
 <games>
+    <bungeecord enable="false" lobby="lobby" /><!-- On this mode, you can create ONE game! -->
     <menu title="@8@l»@r @8Select game!" name="@7Join @8@l»@r @7%MAP_NAME% @8@l»@r @a%PLAYERS%@7/@c%MAX_PLAYERS%" />
     
     <game id="1">
