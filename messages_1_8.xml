@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-messages.xml -->
+<!-- You can create several some of the same message with another communication type, value and others! -->
 <messages>
     <message msg="HELP" value="@7Welcome in Project Areas help center!//@8@l»@r @a/areas join [arena id] @8@l»@r @7join to the arena//@8@l»@r @a/areas leave @8@l»@r @7leave the arena//@8@l»@r @a/areas team [team name] @8@l»@r @7join to the team//@8@l»@r @a/areas status [arena id] [status game] @8@l»@r @7change game status//  @8Status: WAIT, START, GAME, END//@8@l»@r @a/areas nextarena [game id] @8@l»@r @7start next arena//@8@l»@r @a/areas settime [game id] [time] @8@l»@r @7set game time//@8@l»@r @a/areas areasave [arena id] @8@l»@r @7save area//@8@l»@r @a/areas reload @8@l»@r @7reload the plugin" />
     
@@ -13,6 +14,7 @@
     <message msg="GAME_ID_IS_NOT_DEFINDED" sound="ITEM_BREAK" value=" @c@l⚠@r @7Enter game id!" />
     <message msg="GAME_ID_IS_NOT_INTEGER" sound="ITEM_BREAK" value=" @c@l⚠@r @7Game id is must integer!" />
     <message msg="GAME_IS_NOT_EXISTS" sound="ITEM_BREAK" value=" @c@l⚠@r @7Game is not exists!" />
+    <message msg="GAME_IS_ON_GAME" sound="ITEM_BREAK" value=" @c@l⚠@r @7You can not join to start game!" />
     <message msg="GAME_STATUS_IS_NOT_DEFINED" sound="ITEM_BREAK" value=" @c@l⚠@r @7Enter game status!" />
     <message msg="GAME_STAUTS_IS_NOT_OBJECT" sound="ITEM_BREAK" value=" @c@l⚠@r @7Game status is not validate!" />
     <message msg="GAME_TIME_IS_NOT_DEFINED" sound="ITEM_BREAK" value=" @c@l⚠@r @7Enter game time!" />
