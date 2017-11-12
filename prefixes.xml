@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-prefixes.xml -->
+<prefixes>
+    <prefix name="@4[Owner] " permission="projectareas.prefix.owener" />
+    <prefix name="@9[Admin] " permission="projectareas.prefix.admin" />
+    <prefix name="@3[Mod] " permission="projectareas.prefix.mod" />
+    <prefix name="@6[VIP] " permission="projectareas.prefix.vip" />
+</prefixes>
