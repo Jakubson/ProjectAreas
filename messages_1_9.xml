@@ -2,7 +2,7 @@
 <!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-messages.xml -->
 <!-- You can create several some of the same message with another communication type, value and others! -->
 <messages>
-    <message msg="HELP" value="@7Welcome in Project Areas help center!//@8@l»@r @a/areas join [arena id] @8@l»@r @7join to the arena//@8@l»@r @a/areas leave @8@l»@r @7leave the arena//@8@l»@r @a/areas team [team name] @8@l»@r @7join to the team//@8@l»@r @a/areas status [arena id] [status game] @8@l»@r @7change game status//  @8Status: WAIT, START, GAME, END//@8@l»@r @a/areas nextarena [game id] @8@l»@r @7start next arena//@8@l»@r @a/areas settime [game id] [time] @8@l»@r @7set game time//@8@l»@r @a/areas areasave [arena id] @8@l»@r @7save area//@8@l»@r @a/areas reload @8@l»@r @7reload the plugin" />
+    <message msg="HELP" value="@7Welcome in Project Areas help center!//@8@l»@r @a/areas join [arena id] @8@l»@r @7join to the arena//@8@l»@r @a/areas leave @8@l»@r @7leave the arena//@8@l»@r @a/areas team [team name] @8@l»@r @7join to the team//@8@l»@r @a/areas randomteam @8@l»@r @7join to the random team//@8@l»@r @a/areas status [arena id] [status game] @8@l»@r @7change game status//  @8Status: WAIT, START, GAME, END//@8@l»@r @a/areas nextarena [game id] @8@l»@r @7start next arena//@8@l»@r @a/areas settime [game id] [time] @8@l»@r @7set game time//@8@l»@r @a/areas areasave [arena id] @8@l»@r @7save area//@8@l»@r @a/areas reload @8@l»@r @7reload the plugin" />    
     
     <message msg="PLAYER_HAVE_NOT_PERMISSION" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7You do not have not permission!" />
     <message msg="PLAYER_IS_ON_GAME" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7You are in the game!" />
@@ -55,8 +55,8 @@
     <message msg="DEATH_PLAYER_ATTACKER" value=" @a@l»@r @7You killed @a%VICTIM_NAME%@7!" />
     <message msg="DEATH_OTHER" value=" @a@l»@r @7You died!" />
     
-    <message msg="CHAT_TEAM" value="@%PLAYER_TEAM_COLOR%%PLAYER_NAME% @8@l»@r @7%MESSAGE%" />
-    <message msg="CHAT_GLOBAL" value="@%PLAYER_TEAM_COLOR%Global @8@l»@r @%PLAYER_TEAM_COLOR%%PLAYER_NAME% @8@l»@r @7%MESSAGE%" />
+    <message msg="CHAT_TEAM" value="%PLAYER_PREFIX%@%PLAYER_TEAM_COLOR%%PLAYER_NAME% @8@l»@r @7%MESSAGE%" />
+    <message msg="CHAT_GLOBAL" value="@%PLAYER_TEAM_COLOR%Global @8@l»@r %PLAYER_PREFIX%@%PLAYER_TEAM_COLOR%%PLAYER_NAME% @8@l»@r @7%MESSAGE%" />
     
     <message msg="BUILD_DENY" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7You can not build here!" />
     <message msg="EXECUTED" value=" @a@l»@r @7Executed!" />
