@@ -3,7 +3,7 @@
 <arenas>
     <arena id="1">
         <info name="Map" author="Jakubson" version="1.0" />
-        <settings start="20" game="500" end="20" build="true" mode="TDM" damageYourself="true" clearDrop="false" winAfter="50" blockJointoStartGame="false" randomTeamJoin="true" respawning="5" blackout="true" />
+        <settings start="20" game="500" end="20" build="true" mode="TDM" damageYourself="true" clearDrop="false" winAfter="50" lockJointoStartGame="false" randomTeamJoin="true" respawning="5" blackout="true" />
         <points world="world" topX="0" topY="0" topZ="0" bottomX="0" bottomY="0" bottomZ="0" />
         <prize normal="givemoney %WIN_PLAYER% 30" vip="givemoney %WIN_PLAYER% 60" mvp="givemoney %WIN_PLAYER% 120" /> <!-- VIP: projectareas.prize.vip MVP: projectareas.prize.mvp -->
         <lose normal="givemony %LOSE_PLAYER% -30" vip="givemony %LOSE_PLAYER% -15" mvp="" /> <!-- VIP: projectareas.lose.vip MVP: projectareas.lose.mvp -->
@@ -16,7 +16,9 @@
         
         <events>
             <event event="KILL" command="give %PLAYER_NAME% golden_apple 1" />
+            <event event="MONUMENT_DESTORY" command="effect %PLAYER_NAME% regeneration 5 4" />
             <event event="FLAG_STOLEN" command="effect %PLAYER_NAME% speed 5 2" />
+            <event event="FLAG_RECOVERE" command="effect %PLAYER_NAME% speed 5 2" />
             <event event="FLAG_CAPTURE" command="effect %PLAYER_NAME% regeneration 5 4" />
         </events>
         
@@ -78,8 +80,8 @@
         </monuments>
         
         <flags>
-            <flag team="Red" give="1" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
-            <flag team="Blue" give="1" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
+            <flag team="Red" give="1" recovereTime="25" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
+            <flag team="Blue" give="1" recovereTime="25" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
         </flags>
     </arena>
 </arenas>
