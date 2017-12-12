@@ -33,12 +33,14 @@
     <message msg="MONUMENT_DESTROY_YOURSELF" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="GHAST_SCREAM" value=" @c@l⚠@r @c@lYOU CAN'T DESTROY YOUR MONUMENT! @c@l⚠" />
     
     <message msg="FLAG_STOLEN" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="LEVEL_UP" value="@2@l»@r @7You stolen the flag! @2@l«" />
+    <message msg="FLAG_RECOVERE" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="LEVEL_UP" value="@2@l»@r @7You recovere the flag! @2@l«" />
     <message msg="FLAG_CAPTURE" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="LEVEL_UP" value="@2@l»@r @7You capture the flag! @2@l«" />
     <message msg="FLAG_DROP" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20"  sound="ITEM_BREAK" value="@c@l⚠@r @c@lYOU DROP THE FLAG! @c@l⚠" />
     <message msg="FLAG_CAPTURING" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="ITEM_BREAK" value=" @c@l⚠@r @c@lTHIS FLAG IS CAPTURING! @c@l⚠" />
     <message msg="FLAG_STOLEN_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="GHAST_SCREAM" value="@c@l⚠@r @c@lYOUR FLAG IS STOLEN! @c@l⚠" />
     <message msg="FLAG_CAPTURE_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="GHAST_SCREAM" value="@c@l⚠@r @c@lYOUR FLAG IS CAPTURE @c@l⚠" />
-    <message msg="FLAG_RECOVERED_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" value="@2@l»@r @7Your flag is recovered! @2@l«" />
+    <message msg="FLAG_DROP_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" value="@2@l»@r @7Your flag is dropped! @2@l«" />
+    <message msg="FLAG_RECOVERE_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" value="@2@l»@r @7Your flag is recovered! @2@l«" />
     <message msg="FLAG_STOLEN_YOURSELF" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="GHAST_SCREAM" value=" @c@l⚠@r @c@lYOU CAN'T STOLEN YOUR FLAG! @c@l⚠" />
     <message msg="FLAG_MUST_RECOVERED_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="GHAST_SCREAM" value=" @c@l⚠@r @c@lYOUR FLAG MUST BE IN HOME, SO YOU CAN CAPTURED FLAG! @c@l⚠" />
     
