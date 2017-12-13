@@ -3,7 +3,7 @@
 <arenas>
     <arena id="1">
         <info name="Map" author="Jakubson" version="1.0" />
-        <settings start="20" game="500" end="20" build="true" mode="TDM" damageYourself="true" clearDrop="false" winAfter="50" blockJointoStartGame="false" respawning="5" blackout="true" />
+        <settings start="20" game="500" end="20" build="true" mode="TDM" damageYourself="true" clearDrop="false" winAfter="50" blockJointoStartGame="false" defaultTeamChat="true" respawning="5" blackout="true" />
         <points world="world" topX="0" topY="0" topZ="0" bottomX="0" bottomY="0" bottomZ="0" />
         <prize normal="givemoney %WIN_PLAYER% 30" vip="givemoney %WIN_PLAYER% 60" mvp="givemoney %WIN_PLAYER% 120" /> <!-- VIP: projectareas.prize.vip MVP: projectareas.prize.mvp -->
         <lose normal="givemony %LOSE_PLAYER% -30" vip="givemony %LOSE_PLAYER% -15" mvp="" /> <!-- VIP: projectareas.lose.vip MVP: projectareas.lose.mvp -->
