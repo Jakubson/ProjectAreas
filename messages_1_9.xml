@@ -64,5 +64,6 @@
     <message msg="EXECUTED" value=" @a@l»@r @7Executed!" />
     <message msg="RESPAWNING" communication="SUBTITLE" stay="30" value="@6@l✖@r @7You will respawn in @a@l%PLAYER_RESPAWN_TIME%@r@7! @6@l✖" />
     <message msg="COMMAND_DISABLE" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7This command is disable!" />
+    <message msg="COMPASS_TRACKER" value=" @a@l»@r @7Track to %FLAG_NAME%! @2@l«" />
     <message msg="MOTD" value="%MAP_NAME%" />
 </messages>
