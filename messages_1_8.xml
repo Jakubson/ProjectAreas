@@ -2,7 +2,8 @@
 <!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-messages.xml -->
 <!-- You can create several some of the same message with another communication type, value and others! -->
 <messages>
-    <message msg="HELP" value="@7Welcome in Project Areas help center!//@8@l»@r @a/areas join [arena id] @8@l»@r @7join to the arena//@8@l»@r @a/areas leave @8@l»@r @7leave the arena//@8@l»@r @a/areas team [team name] @8@l»@r @7join to the team//@8@l»@r @a/areas randomteam @8@l»@r @7join to the random team//@8@l»@r @a/areas status [arena id] [status game] @8@l»@r @7change game status//  @8Status: WAIT, START, GAME, END//@8@l»@r @a/areas nextarena [game id] @8@l»@r @7start next arena//@8@l»@r @a/areas settime [game id] [time] @8@l»@r @7set game time//@8@l»@r @a/areas areasave [arena id] @8@l»@r @7save area//@8@l»@r @a/areas reload @8@l»@r @7reload the plugin" />    
+    <message msg="HELP" value="@7Welcome in Project Areas help center!//@8@l»@r @a/areas join [arena id] @8@l»@r @7join to the arena//@8@l»@r @a/areas leave @8@l»@r @7leave the arena//@8@l»@r @a/areas team [team name] @8@l»@r @7join to the team//@8@l»@r @a/areas randomteam @8@l»@r @7join to the random team//@8@l»@r @a/areas status [arena id] [status game] @8@l»@r @7change game status//  @8Status: WAIT, START, GAME, END//@8@l»@r @a/areas nextarena [game id] @8@l»@r @7start next arena//@8@l»@r @a/areas settime [game id] [time] @8@l»@r @7set game time//@8@l»@r @a/areas areasave [arena id] @8@l»@r @7save area//@8@l»@r @a/areas reload @8@l»@r @7reload the plugin" />
+
     <message msg="PLAYER_HAVE_NOT_PERMISSION" sound="ITEM_BREAK" value=" @c@l⚠@r @7You do not have not permission!" />
     <message msg="PLAYER_IS_ON_GAME" sound="ITEM_BREAK" value=" @c@l⚠@r @7You are in the game!" />
     <message msg="PLAYER_JOIN_TO_THE_GAME" sound="CLICK" value=" @a@l»@r @7You joined to the game! @8(@a%PLAYERS%@7/@c%MAX_PLAYERS%@8)" />
@@ -63,5 +64,6 @@
     <message msg="EXECUTED" value=" @a@l»@r @7Executed!" />
     <message msg="RESPAWNING" communication="SUBTITLE" stay="30" value="@6@l✖@r @7You will respawn in @a@l%PLAYER_RESPAWN_TIME%@r@7! @6@l✖" />
     <message msg="COMMAND_DISABLE" sound="ITEM_BREAK" value=" @c@l⚠@r @7This command is disable!" />
+    <message msg="COMPASS_TRACKER" value=" @a@l»@r @7Track to %FLAG_NAME%! @2@l«" />
     <message msg="MOTD" value="%MAP_NAME%" />
 </messages>
