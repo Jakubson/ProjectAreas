@@ -80,8 +80,8 @@
         </monuments>
         
         <flags>
-            <flag team="Red" give="1" recovereTime="25" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
-            <flag team="Blue" give="1" recovereTime="25" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
+            <flag team="Red" name="Red's flag" give="1" recovereTime="25" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
+            <flag team="Blue" name="Blue's flag"  give="1" recovereTime="25" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
         </flags>
     </arena>
 </arenas>
