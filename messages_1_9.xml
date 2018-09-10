@@ -59,6 +59,11 @@
     
     <message msg="CHAT_TEAM" value="%PLAYER_PREFIX%@%PLAYER_TEAM_COLOR%%PLAYER_NAME% @8@l»@r @7%MESSAGE%" />
     <message msg="CHAT_GLOBAL" value="@%PLAYER_TEAM_COLOR%Global @8@l»@r %PLAYER_PREFIX%@%PLAYER_TEAM_COLOR%%PLAYER_NAME% @8@l»@r @7%MESSAGE%" />
+
+    <message msg="STATUS_WAIT" value="@2Waiting" />
+    <message msg="STATUS_START" value="@2Starting" />
+    <message msg="STATUS_GAME" value="@cGaming" />
+    <message msg="STATUS_END" value="@6Ending" />
     
     <message msg="BUILD_DENY" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7You can not build here!" />
     <message msg="EXECUTED" value=" @a@l»@r @7Executed!" />
