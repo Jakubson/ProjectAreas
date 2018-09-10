@@ -2,9 +2,10 @@
 <!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-signs.xml -->
 <signs>
     <sign id="1">
-        <info world="word" x="1" y="1" z="1" game="1" />
+        <info world="world" x="1" y="1" z="1" game="1" />
+        <status wait="WOOL/13" start="WOOL/13" game="WOOL/14" end="WOOL/4" />
         <line line="0" message="@a@l[Join]" />
-        <line line="1" message=" " />
+        <line line="1" message="Status: %STATUS%" />
         <line line="2" message="Map: %MAP_NAME%" />
         <line line="3" message="Players: %PLAYERS%/%MAX_PLAYERS%" />
         <!-- to 4 lines -->
