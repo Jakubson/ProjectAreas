@@ -52,6 +52,7 @@
     <message msg="START_COUNTING" communication="ACTIONBAR" sound="BLOCK_STONE_PRESSUREPLATE_CLICK_ON" value="@7Start @8@l»@r @a%TIME%" />
     <message msg="GAME_COUNTING" communication="ACTIONBAR" value="@7End @8@l»@r @a%TIME%" />
     <message msg="END_COUNTING" communication="ACTIONBAR" sound="BLOCK_STONE_PRESSUREPLATE_CLICK_ON" value="@7Next map @8@l»@r @7%NEXT_MAP_NAME% @8@l»@r @a%TIME%" />
+    <message msg="LAST_COUNTING" communication="ACTIONBAR" sound="BLOCK_STONE_PRESSUREPLATE_CLICK_ON" value="@7Teleport to the lobby @8@l»@r @a%TIME%" />
     
     <message msg="DEATH_PLAYER_VICTIM" value=" @a@l»@r @7You been kiled by @a%ATTACKER_NAME% @8(@a%ATTACKER_HEALTH% @c❤@8) @7using @a%ATTACKER_TOOL%@7!" />
     <message msg="DEATH_PLAYER_ATTACKER" value=" @a@l»@r @7You killed @a%VICTIM_NAME%@7!" />
