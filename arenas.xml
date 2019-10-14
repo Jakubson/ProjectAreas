@@ -65,7 +65,7 @@
             </spectator>
 
             <kits>
-                <kit name="Normal" icon="STONE" permission="projectareas.kit.normal" default="true" >
+                <kit name="Normal" icon="STONE" permission="projectareas.kit.normal" default="true">
                     <item slot="0" item="IRON_SWORD" amount="1" data="0" name="@aSword" lore="@7Description of sword." enchant="DAMAGE_ALL" level="1" />
                     <item slot="1" item="IRON_PICKAXE" amount="1" data="0" name="@aPickaxe" lore="@7Description of pickaxe" />
                     <item slot="2" item="BOW" amount="1" data="0" name="@aBow" lore="@7Description of bow." enchant="ARROW_DAMAGE" level="2" />
@@ -81,7 +81,7 @@
                     <item slot="103" item="LEATHER_HELMET" amount="1" data="0" name="@aHelmet" lore="@7Description of helmet." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
                 </kit>
 
-                <kit name="Elite" icon="DIAMOND_BLOCK" permission="projectareas.kit.elite" default="true" >
+                <kit name="Elite" icon="DIAMOND_BLOCK" permission="projectareas.kit.elite">
                     <item slot="0" item="DIAMOND_SWORD" amount="1" data="0" name="@aSword" lore="@7Description of sword." enchant="DAMAGE_ALL" level="5" />
                 </kit>
             </kits>
