@@ -2,7 +2,7 @@
 <!-- Wiki: https://github.com/Jakubson/ProjectAreas/wiki/File-messages.xml -->
 <!-- You can create several some of the same message with another communication type, value and others! -->
 <messages>
-    <message msg="HELP" value="@7Welcome in Project Areas help center!//@8@l»@r @a/areas join [arena id] @8@l»@r @7join to the arena//@8@l»@r @a/areas leave @8@l»@r @7leave the arena//@8@l»@r @a/areas team [team name] @8@l»@r @7join to the team//@8@l»@r @a/areas randomteam @8@l»@r @7join to the random team//@8@l»@r @a/areas status [arena id] [status game] @8@l»@r @7change game status//  @8Status: WAIT, START, GAME, END//@8@l»@r @a/areas nextarena [game id] @8@l»@r @7start next arena//@8@l»@r @a/areas settime [game id] [time] @8@l»@r @7set game time//@8@l»@r @a/areas areasave [arena id] @8@l»@r @7save area//@8@l»@r @a/areas reload @8@l»@r @7reload the plugin" />    
+    <message msg="HELP" value="@7Welcome in Project Areas help center!//@8@l»@r @a/areas join [arena id] @8@l»@r @7join to the arena//@8@l»@r @a/areas leave @8@l»@r @7leave the arena//@8@l»@r @a/areas team [team teamName] @8@l»@r @7join to the team//@8@l»@r @a/areas randomteam @8@l»@r @7join to the teamRandom team//@8@l»@r @a/areas status [arena id] [status game] @8@l»@r @7change game status//  @8Status: WAIT, START, GAME, END//@8@l»@r @a/areas nextarena [game id] @8@l»@r @7start next arena//@8@l»@r @a/areas settime [game id] [time] @8@l»@r @7set game time//@8@l»@r @a/areas areasave [arena id] @8@l»@r @7save area//@8@l»@r @a/areas reload @8@l»@r @7reload the plugin" />
     
     <message msg="PLAYER_HAVE_NOT_PERMISSION" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7You do not have not permission!" />
     <message msg="PLAYER_IS_ON_GAME" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7You are in the game!" />
@@ -10,7 +10,8 @@
     <message msg="PLAYER_LEAVE_THE_GAME" sound="BLOCK_STONE_PRESSUREPLATE_CLICK_ON" value=" @a@l»@r @7You left the game!" />
     <message msg="PLAYER_IS_NOT_ON_GAME" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7You are not in the game!" />
     <message msg="PLAYER_JOIN_TO_THE_TEAM" sound="BLOCK_STONE_PRESSUREPLATE_CLICK_ON" value=" @a@l»@r @7You joined to the @%PLAYER_TEAM_COLOR%@l%PLAYER_TEAM_NAME%@r @7team! @8(@a%PLAYER_TEAM_PLAYERS%@7/@c%PLAYER_TEAM_MAX_PLAYERS%@8)" />
-    
+    <message msg="PLAYER_SELECT_KIT" sound="BLOCK_STONE_PRESSUREPLATE_CLICK_ON" value=" @a@l»@r @7You selected @a%KIT_NAME% @7kit!"/>
+
     <message msg="GAME_ID_IS_NOT_DEFINDED" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7Enter game id!" />
     <message msg="GAME_ID_IS_NOT_INTEGER" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7Game id is must integer!" />
     <message msg="GAME_IS_NOT_EXISTS" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7Game is not exists!" />
@@ -25,9 +26,10 @@
     <message msg="ARENA_ID_IS_NOT_INTEGER" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7Arena id is must integer!" />
     <message msg="ARENA_IS_NOT_EXISTS" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7Arena is not exists!" />
     
-    <message msg="TEAM_IS_NOT_DEFINDED" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7Enter team name!" /> 
     <message msg="TEAM_IS_NOT_EXISTS" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7Team is not exists!" />
     <message msg="TEAM_IS_FULL" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7Team is full!" />
+
+    <message msg="KIT_IS_NOT_EXITS" sound="ENTITY_ITEM_BREAK" value=" @c@l⚠@r @7Kit is not exists!" />
     
     <message msg="MONUMENT_DESTROY" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20"  sound="BLOCK_ANVIL_BREAK" value="@2@l»@r @7You destory monument! @2@l«" />
     <message msg="MONUMENT_DESTROY_YOURTEAM" communication="SUBTITLE" fadeIn="20" stay="40" fadeOut="20" sound="ENTITY_GHAST_SCREAM" value="@c@l⚠@r @c@lYOUR MONUMENT IS DESTROYING! @c@l⚠" />
