@@ -3,16 +3,22 @@
 <arenas>
     <arena id="1">
         <info name="Map" author="Jakubson" version="1.0" />
-        <settings start="20" game="500" end="20" build="true" mode="TDM" damageYourself="true" clearDrop="false" winAfter="50" blockJointoStartGame="false" defaultTeamChat="true" respawning="5" blackout="true" poison="true" />
+        <settings start="20" game="500" end="20" build="true" mode="TDM" damageYourself="true" clearDrop="false" winAfter="50" blockJointoStartGame="false" defaultTeamChat="true" useOwnInventory="false" respawning="5" blackout="true" poison="true" />
         <points world="world" topX="0" topY="0" topZ="0" bottomX="0" bottomY="0" bottomZ="0" />
         <prize normal="givemoney %WIN_PLAYER% 30" vip="givemoney %WIN_PLAYER% 60" mvp="givemoney %WIN_PLAYER% 120" /> <!-- VIP: projectareas.prize.vip MVP: projectareas.prize.mvp -->
         <lose normal="givemony %LOSE_PLAYER% -30" vip="givemony %LOSE_PLAYER% -15" mvp="" /> <!-- VIP: projectareas.lose.vip MVP: projectareas.lose.mvp -->
-        <menu title="@8@l»@r @8Select team!" name="@7Join @8@l»@r @%TEAM_COLOR%%TEAM_NAME% @8@l»@r @a%TEAM_PLAYERS%@7/@c%TEAM_MAX_PLAYERS%" random="@7Join to the random team" />
+        <menu teamTitle="@8@l»@0 @8Select team!" teamName="@7Join @8@l»@0 @%TEAM_COLOR%%TEAM_NAME% @8@l»@0 @a%TEAM_PLAYERS%@7/@c%TEAM_MAX_PLAYERS%" teamRandom="@7Join to the teamRandom team" kitTitle="@8@l»@0 @8Select kit!" kitName="@7Select @8@l»@0 @a%KIT_NAME%" />
         
         <disable>
             <command name="gamemode" />
             <command name="tp" />
         </disable>
+
+        <modifyable>
+            <breakable block="GLASS" />
+            <breakable block="LEAVES" />
+            <placeable block="LEAVES" />
+        </modifyable>
         
         <events>
             <event event="KILL" command="give %PLAYER_NAME% golden_apple 1" />
@@ -25,20 +31,20 @@
         <scoreboard>
             <title value="@6@lTEAM DEATH MATCH" />
             <slot value="@f " /> <!-- empty slot 1 -->
-            <slot value="@7Time @8@l»@r @a%TIME%" />
+            <slot value="@7Time @8@l»@0 @a%TIME%" />
             <slot value="@f  " /> <!-- empty slot 2 -->
-            <slot value="@7Kills @8@l»@r @a%PLAYER_KILLS%" />
-            <slot value="@7Deaths @8@l»@r @a%PLAYER_DEATHS%" />
+            <slot value="@7Kills @8@l»@0 @a%PLAYER_KILLS%" />
+            <slot value="@7Deaths @8@l»@0 @a%PLAYER_DEATHS%" />
             <slot value="@f   " /> <!-- empty slot 3 -->
-            <slot value="@7Your team @8@l»@r @%PLAYER_TEAM_COLOR%%PLAYER_TEAM_NAME%" />
-            <slot value="@7In your team @8@l»@r @a%PLAYER_TEAM_PLAYERS%" />
+            <slot value="@7Your team @8@l»@0 @%PLAYER_TEAM_COLOR%%PLAYER_TEAM_NAME%" />
+            <slot value="@7In your team @8@l»@0 @a%PLAYER_TEAM_PLAYERS%" />
             <slot value="@f    " /> <!-- empty slot 4 -->
-            <slot value="@cRed @8@l»@r @a%TEAMS_SCORE%Red%" />
-            <slot value="@9Blue @8@l»@r @a%TEAMS_SCORE%Blue%" />
-            <slot value="@2Green @8@l»@r @a%TEAMS_SCORE%Green%" />
-            <slot value="@6Gold @8@l»@r @a%TEAMS_SCORE%Gold%" />
+            <slot value="@cRed @8@l»@0 @a%TEAMS_SCORE%Red%" />
+            <slot value="@9Blue @8@l»@0 @a%TEAMS_SCORE%Blue%" />
+            <slot value="@2Green @8@l»@0 @a%TEAMS_SCORE%Green%" />
+            <slot value="@6Gold @8@l»@0 @a%TEAMS_SCORE%Gold%" />
             <slot value="@f     " /> <!-- empty slot 5 -->
-            <slot value=" @8@l»@r @6www.spigotmc.org @8@l«" />
+            <slot value=" @8@l»@0 @6www.spigotmc.org @8@l«" />
             <!-- to 16 slots -->
         </scoreboard>
 
@@ -52,26 +58,33 @@
         
         <inventory>
             <spectator>
-                <item slot="0" item="NETHER_STAR" amount="1" data="0" command="/projectareas team" name="@8@l»@r @aTeam select" />
-                <item slot="1" item="COMPASS" amount="1" data="0" name="@8@l»@r @aTeleport" />
-                <item slot="8" item="BED" amount="1" data="0" command="/projectareas leave" name="@8@l»@r @cLeave" />
+                <item slot="0" item="NETHER_STAR" amount="1" data="0" command="/projectareas team" name="@8@l»@0 @aTeam select" />
+                <item slot="1" item="EMERALD" amount="1" data="0" command="/projectareas kit" name="@8@l»@0 @aKit select" />
+                <item slot="2" item="COMPASS" amount="1" data="0" name="@8@l»@0 @aTeleport" />
+                <item slot="8" item="BED" amount="1" data="0" command="/projectareas leave" name="@8@l»@0 @cLeave" />
             </spectator>
-            
-            <player>
-                <item slot="0" item="IRON_SWORD" amount="1" data="0" name="@aSword" lore="@7Description of sword." enchant="DAMAGE_ALL" level="1" />
-                <item slot="1" item="IRON_PICKAXE" amount="1" data="0" name="@aPickaxe" lore="@7Description of pickaxe" />
-                <item slot="2" item="BOW" amount="1" data="0" name="@aBow" lore="@7Description of bow." enchant="ARROW_DAMAGE" level="2" />
-                <item slot="3" item="COOKED_BEEF" amount="32" data="0" name="@aBeef" lore="@7Description of beef." />
-                <item slot="4" item="GOLDEN_APPLE" amount="2" data="0" name="@6Apple" lore="@7Description of applee." />
-                <item slot="5" item="COBBLESTONE" amount="64" data="0" />
-                <item slot="6" item="COBBLESTONE" amount="64" data="0" />
-                <item slot="29" item="ARROW" amount="64" data="0" />
-                <item slot="20" item="ARROW" amount="64" data="0" />
-                <item slot="100" item="LEATHER_BOOTS" amount="1" data="0" name="@aBoots" lore="@7Description of boots." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
-                <item slot="101" item="LEATHER_LEGGINGS" amount="1" data="0" name="@aLeggings" lore="@7Description of leggings." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
-                <item slot="102" item="IRON_CHESTPLATE" amount="1" data="0" name="@aChestplate" lore="@7Description of chestplate." />
-                <item slot="103" item="LEATHER_HELMET" amount="1" data="0" name="@aHelmet" lore="@7Description of helmet." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
-            </player>
+
+            <kits>
+                <kit name="Normal" icon="STONE" permission="projectareas.kit.normal" default="true" >
+                    <item slot="0" item="IRON_SWORD" amount="1" data="0" name="@aSword" lore="@7Description of sword." enchant="DAMAGE_ALL" level="1" />
+                    <item slot="1" item="IRON_PICKAXE" amount="1" data="0" name="@aPickaxe" lore="@7Description of pickaxe" />
+                    <item slot="2" item="BOW" amount="1" data="0" name="@aBow" lore="@7Description of bow." enchant="ARROW_DAMAGE" level="2" />
+                    <item slot="3" item="COOKED_BEEF" amount="32" data="0" name="@aBeef" lore="@7Description of beef." />
+                    <item slot="4" item="GOLDEN_APPLE" amount="2" data="0" name="@6Apple" lore="@7Description of applee." />
+                    <item slot="5" item="COBBLESTONE" amount="64" data="0" />
+                    <item slot="6" item="COBBLESTONE" amount="64" data="0" />
+                    <item slot="29" item="ARROW" amount="64" data="0" />
+                    <item slot="20" item="ARROW" amount="64" data="0" />
+                    <item slot="100" item="LEATHER_BOOTS" amount="1" data="0" name="@aBoots" lore="@7Description of boots." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
+                    <item slot="101" item="LEATHER_LEGGINGS" amount="1" data="0" name="@aLeggings" lore="@7Description of leggings." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
+                    <item slot="102" item="IRON_CHESTPLATE" amount="1" data="0" name="@aChestplate" lore="@7Description of chestplate." />
+                    <item slot="103" item="LEATHER_HELMET" amount="1" data="0" name="@aHelmet" lore="@7Description of helmet." enchant="PROTECTION_ENVIRONMENTAL" level="1" />
+                </kit>
+
+                <kit name="Elite" icon="DIAMOND_BLOCK" permission="projectareas.kit.elite" default="true" >
+                    <item slot="0" item="DIAMOND_SWORD" amount="1" data="0" name="@aSword" lore="@7Description of sword." enchant="DAMAGE_ALL" level="5" />
+                </kit>
+            </kits>
         </inventory>
         
         <monuments>
@@ -81,7 +94,7 @@
         
         <flags>
             <flag team="Red" name="Red's flag" give="1" recovereTime="25" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
-            <flag team="Blue" name="Blue's flag"  give="1" recovereTime="25" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
+            <flag team="Blue" name="Blue's flag" give="1" recovereTime="25" fromParticle="PORTAL" fromSize="1.2" fromProtection="5" fromWorld="world" fromX="0" fromY="0" fromZ="0" toWorld="world" toX="0" toY="0" toZ="0" />
         </flags>
     </arena>
 </arenas>
